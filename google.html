@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Google Assignment
+        </title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 0 16px;
+            }
+            nav{
+                text-align: right;
+            }
+            .menu-items{
+                font-size: 13px;
+                color: rgba(0, 0. 0, 0.87);
+                text-decoration: none;
+                position: relative;
+                top: -16px;
+                margin-right: 16px;
+            }
+            .menu-items:hover{
+                text-decoration: underline;
+            }
+            #dropdown-menu{
+                position: relative;
+                top: -10px;
+                margin-right: 16px;
+            }
+            #profile-pic{
+                width: 48px;
+                height: 48px;
+                border-radius: 100%;
+            }
+            section{
+                text-align: center;
+                padding-top: 12%;
+            }
+            #input-wrapper{
+                position: relative;
+                width: 582px;
+                display: inline-block;
+            }
+            #search-box{
+              
+                width: 100%;
+                color: #222;
+                border: 1px solid #dfe1e5;
+                font-size: 13px;
+                padding: 14px;
+                border-radius: 24px;
+                outline: none;
+                margin-top: 24px;
+                margin-bottom: 24px;
+            }
+            #search-box:hover{
+                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+                border-color: rgba(223, 225, 229, 0);
+            }
+            #search-box:focus{
+                box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+                border-color: rgba(223, 225, 229, 0);
+            }
+            #input-wrapper > img{
+                position: absolute;
+                right: 0;
+                top: 32px;
+                width: 28px;
+            }
+            .custom-btn{
+                background-color: #f2f2f2;
+                color: #5F6368;
+                font-size: 14px;
+                height: 36px;
+                padding: 0 16px;
+                background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+                border: 1px solid transparent;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
+                color: #222;
+            }
+            .custom-btn:hover{
+                background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+                border: 1px solid #c6c6c6;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+                color: #222;
+            }
+            .custom-btn:first-of-type{
+                margin-right: 16px;
+            }
+            #app-dropdown{
+                width: 285px;
+                padding: 28px;
+                border: 1px solid #ccc;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                position: absolute;
+                right: 100px;
+                display: none;
+            }
+            #dropdown-wrapper{
+                display: inline-block;
+            }
+            #dropdown-wrapper:hover
+            #app-dropdown{
+                 display: block;
+            }
+            .app-item{
+                display: inline-block;
+                width: 84px;
+                margin-bottom: 18px;
+                padding: 8px 2px;
+                text-align: center;
+            }
+            .app-item > img{
+                width: 50px;
+                height: 50px;
+            }
+            .app-item > p{
+                color: black;
+                margin: 0;
+                padding-top: 8px;
+            }
+            .app-item:hover{
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 8px;
+            }
+
+         
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="menu-items" href="/">Gmail</a>
+                <a class="menu-items" href="/">Images</a>
+                <div id="dropdown-wrapper">
+                    <i id="dropdown-menu" class="material-icons">apps</i>
+                <div id="app-dropdown">
+                    <div class="app-item">
+                        <img src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="Google Search">
+                        <p>Search</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="http://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png" alt="Google Maps">
+                        <p>Maps</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" alt="Google Drive">
+                        <p>Drive</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="calendar.png" alt="Google Calendar">
+                        <p>Calendar</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="https://blogs.acu.edu/innovation_foundry/files/2017/06/google_photos1600.png" alt="Google Photos">
+                        <p>Search</p>
+                    </div>
+                    <div class="app-item">
+                        <img src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="Google Search">
+                        <p>Search</p>
+                    </div>
+                </div>
+                </div>
+                <img id="profile-pic" src="me.jpg" alt="Profile-pic">
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+                <br>
+                <div id="input-wrapper">
+                    <input id="search-box" type="text">
+                    <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png" alt="google voice search icon">
+                </div>
+                <div>
+                    <button class="custom-btn">Google Search</button>
+                    <button class="custom-btn">I'm Feeling Lucky</button>
+                </div>
+                
+            </section>
+        </main>
+    </body>
+</html>
